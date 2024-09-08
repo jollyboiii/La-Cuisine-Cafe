@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --primarycolor:#FF902A;
+  --secondarycolor:#2F2105;
+  --Background-1:#F6EBDA;
+  --Background-2:#F9D9AA;
+  --secondary-text:#7E7D7A;
+  --Background-3:#FAFAFA;
+  --border-color1: rgba(249, 217, 170, 0.5);
+  --border-color2: rgba(246, 235, 218, 0.5); 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: var(--Background-1);
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+ul li{
+  font-weight: normal;
+}
+ul li:hover{
+  color: var(--primarycolor);
+
+}
+
+.Visitusbtn{
+  background-color: var(--primarycolor);
+  color: var(--secondarycolor);
+  padding: 10px 20px;
+  border-radius:10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: normal;
+}
+.Visitusbtn:hover{
+  background-color: var(--secondarycolor);
+  color: var(--primarycolor);
+}
+
+@media (max-width: 700px) {
+  #navbar-sticky {
+    background-color: var(--Background-2); 
+    border-radius: 10px;
+    padding: 5px; 
+    transition: all 0.3s ease-in-out; 
+  }
+
+
+  ul li {
+    background-color: var(--Background-2); 
+    padding: 5px 15px; /* Add padding */
+    margin-top: 5px; /* Add margin */
+    border-radius: 5px; /* Rounded corners */
+  }
+
+  ul li:hover {
+    background-color: var(--secondarycolor); 
+    color: var(--primarycolor); 
+  }
+  /* .Cusinelogo{
+    width: 30vw;
+    height: 10vh;
+  } */
+}
+
+
