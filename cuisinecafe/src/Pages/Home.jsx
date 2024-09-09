@@ -1,8 +1,11 @@
 import React from 'react'
+import Herosecton from '../components/herosection'
 
 function Home() {
   return (
-    <div>This is Home Page</div>
+    <div>
+      <Herosecton/>
+    </div>
   )
 }
 
