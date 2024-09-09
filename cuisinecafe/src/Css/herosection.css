@@ -1,0 +1,123 @@
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 44px;
+    --heading-h2-font-size: 32px;
+    --heading-h3-font-size: 24px;
+    --heading-h4-font-size: 18px;
+    --heading-h5-font-size: 16px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 10%;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: var(--heading-h1-font-size);
+    color: var(--secondarycolor);
+}
+.hero-content p{
+    font-size: var(--heading-h5-font-size);
+}
+
+.highlight {
+    color: var(--primarycolor);
+}
+
+.hero-buttons {
+    margin-top: 1.5rem;
+}
+
+.menu-btn,.location-btn {
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--secondarycolor);
+    color: var(--secondarycolor);
+    border-radius: 15px;
+}
+
+.menu-btn:hover, .location-btn:hover {
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    max-width: 350px;
+    border-radius: 50%;
+    background: none;
+    
+}
+
+.coffee-beans {
+    position: absolute;
+    top: 0px;
+    right: -600px;
+    background-image: url('../Images/backgroundbeans.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 55vh;
+    z-index: -1;
+}
+
+  /* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .hero-container {  
+        flex-direction: column;
+        text-align: center;
+        margin: 0 5%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-btn,
+    .location-btn {
+        margin-right: 0.5rem;
+    }
+
+    /* Remove coffee cup image for small screens */
+    .hero-image img{
+        display: none;
+    }
+
+    .coffee-beans {
+        top: -300px;
+        right: -300px;
+        width: 90vw;
+        height: 80vh;
+        opacity: 0.3;
+    }
+}
