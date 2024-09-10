@@ -43,7 +43,7 @@ body{
     font-size: var(--heading-h5-font-size);
 }
 .space{
-    margin: 0 5%;
+    margin: 0;
 }
 
 /* Card button */
