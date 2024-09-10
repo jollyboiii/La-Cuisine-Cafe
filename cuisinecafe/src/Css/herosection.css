@@ -13,15 +13,17 @@
     --heading-h4-font-size: 18px;
     --heading-h5-font-size: 16px;
 }
+body{
+    overflow-x: hidden;
+}
 
 .hero-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
     margin: 0 10%;
+    height: 60vh; /* Default height for larger screens */
 }
-
 .hero-content {
     max-width: 50%;
 }
@@ -71,22 +73,48 @@
 
 .coffee-beans {
     position: absolute;
-    top: 0px;
-    right: -600px;
+    top: 0;
+    right: -100px;
     background-image: url('../Images/backgroundbeans.png');
-    background-size: contain;
+    background-size: 100% 45vh;
     background-repeat: no-repeat;
-    width: 60vw;
-    height: 55vh;
+    width: 50vw;
+    height: 45vh;
     z-index: -1;
 }
-
+@media (max-width: 1024px) {
+    .hero-container {
+        height: 60vh; 
+    }
+}
+@media(max-width:915px){
+    .hero-container {
+        height: 30vh; 
+    }
+}
+@media (max-width: 868px) {
+    .hero-image img {
+        width: 250px;
+        margin-left: 5%;
+    }
+    .coffee-beans {
+        top: -200px;
+        right: -100px;
+        width: 50vw;
+        height: 45vh;
+        background-size: cover;
+    }
+    .hero-container {
+        height: 45vh; 
+    }
+    
   /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
-    .hero-container {  
+    .hero-container {
         flex-direction: column;
         text-align: center;
         margin: 0 5%;
+        height: 25vh; 
     }
 
     .hero-content {
@@ -114,10 +142,26 @@
     }
 
     .coffee-beans {
-        top: -300px;
-        right: -300px;
-        width: 90vw;
-        height: 80vh;
+        top: -190px;
+        right: -250px;
+        width: 40vw;
+        height: 20vh;
+        background-size: cover;
+        opacity: 0.5;
+    }
+}
+@media (max-width: 480px) {
+    .hero-container {
+        height: 35vh; /* Height for smaller screens like mobile phones */
+    }
+
+    .coffee-beans {
+        top: -600px;
+        right: -150px;
+        width: 80vw;
+        height: 50vh;
+        background-size: cover;
         opacity: 0.3;
     }
+}
 }
