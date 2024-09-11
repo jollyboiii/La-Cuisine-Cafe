@@ -4,7 +4,8 @@ import capachino from '../Images/aboutus-section-img.png';
 
 function About() {
   return (
-    <div className='container mx-auto mainabout'>
+    <div className="aboutmain">
+        <div className='container mx-auto mainabout'>
         <div className="bgimg"/>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative z-10 p-4">
             <div className="text-center md:text-left">
@@ -20,6 +21,7 @@ function About() {
                 <img src={capachino} alt='coffeeimg' className="max-w-full h-auto"/>
             </div>
         </div>
+    </div>
     </div>
   )
 }

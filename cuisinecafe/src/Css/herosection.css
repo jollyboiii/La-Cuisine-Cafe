@@ -13,8 +13,18 @@
     --heading-h4-font-size: 18px;
     --heading-h5-font-size: 16px;
 }
-body{
+
+body {
     overflow-x: hidden;
+    margin: 0;
+}
+
+.heromain {
+    background-color: var(--Background-1);
+    z-index: 1; /* Bring this element into a positive z-index */
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .hero-container {
@@ -22,17 +32,23 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0 10%;
-    height: 60vh; /* Default height for larger screens */
+    height: 60vh;
+    position: relative;
+    z-index: 2; /* Ensure the container is above other elements */
 }
+
 .hero-content {
     max-width: 50%;
+    position: relative;
+    z-index: 3; /* Bring buttons and content to the top */
 }
 
 .hero-content h1 {
     font-size: var(--heading-h1-font-size);
     color: var(--secondarycolor);
 }
-.hero-content p{
+
+.hero-content p {
     font-size: var(--heading-h5-font-size);
 }
 
@@ -42,9 +58,13 @@ body{
 
 .hero-buttons {
     margin-top: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
 }
 
-.menu-btn,.location-btn {
+.menu-btn,
+.location-btn {
     padding: 0.75rem 1.5rem;
     margin-right: 1rem;
     border: none;
@@ -55,20 +75,22 @@ body{
     border-radius: 15px;
 }
 
-.menu-btn:hover, .location-btn:hover {
+.menu-btn:hover,
+.location-btn:hover {
     background-color: var(--secondarycolor);
     color: var(--primarycolor);
 }
 
 .hero-image {
     position: relative;
+    z-index: 2; /* Keep this below hero-content */
 }
 
 .hero-image img {
     max-width: 350px;
     border-radius: 50%;
     background: none;
-    
+    z-index: 1;
 }
 
 .coffee-beans {
@@ -80,18 +102,21 @@ body{
     background-repeat: no-repeat;
     width: 50vw;
     height: 45vh;
-    z-index: -1;
+    z-index: -1; 
 }
+
 @media (max-width: 1024px) {
     .hero-container {
-        height: 60vh; 
+        height: 60vh;
     }
 }
-@media(max-width:915px){
+
+@media (max-width: 915px) {
     .hero-container {
-        height: 30vh; 
+        height: 30vh;
     }
 }
+
 @media (max-width: 868px) {
     .hero-image img {
         width: 250px;
@@ -105,16 +130,16 @@ body{
         background-size: cover;
     }
     .hero-container {
-        height: 45vh; 
+        height: 45vh;
     }
-    
-  /* Media Query for Mobile Screens */
+}
+
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column;
         text-align: center;
         margin: 0 5%;
-        height: 25vh; 
+        height: 25vh;
     }
 
     .hero-content {
@@ -136,8 +161,7 @@ body{
         margin-right: 0.5rem;
     }
 
-    /* Remove coffee cup image for small screens */
-    .hero-image img{
+    .hero-image img {
         display: none;
     }
 
@@ -150,9 +174,10 @@ body{
         opacity: 0.5;
     }
 }
+
 @media (max-width: 480px) {
     .hero-container {
-        height: 35vh; /* Height for smaller screens like mobile phones */
+        height: 45vh;
     }
 
     .coffee-beans {
@@ -163,5 +188,4 @@ body{
         background-size: cover;
         opacity: 0.3;
     }
-}
 }

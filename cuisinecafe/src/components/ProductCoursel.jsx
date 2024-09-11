@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProductCard from './ProductCard';
 import products from '../components/products';  
-import '../Css/Feature.css'
+// import '../Css/Feature.css'
 function ProductCoursel() {
     const responsive = {
         superLargeDesktop: {

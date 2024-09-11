@@ -4,7 +4,8 @@ import coffecup from '../Images/coffe.png';
 
 function HeroSection() {
   return (
-    <div className="hero-container">
+    <div className="heromain">
+      <div className="hero-container">
       <div className="hero-content">
         <h1>Sip, Savor, Smile <span className="highlight">Delicious Moments</span> Every Day</h1>
         <p>Welcome to La Cuisine Cafe, where every sip and bite is crafted with love.</p>
@@ -17,6 +18,7 @@ function HeroSection() {
         <img src={coffecup} alt="Cup of Coffee" className="coffe-image mt-5"/>
         <div className="coffee-beans"></div> 
       </div>
+    </div>
     </div>
   );
 }
