@@ -23,9 +23,13 @@
 
 
 body {
-  background-color: var(--Background-1);
+  background-color: var(--Background-3);
   font-family: "Poppins", sans-serif;
   font-weight: normal;
+}
+
+nav{
+  background-color: var(--Background-1);
 }
 ul li{
   font-weight: normal;
@@ -59,12 +63,7 @@ ul li:hover{
   }
 
 
-  ul li {
-    background-color: var(--Background-2); 
-    padding: 5px 15px; /* Add padding */
-    margin-top: 5px; /* Add margin */
-    border-radius: 5px; /* Rounded corners */
-  }
+ 
 
   ul li:hover {
     background-color: var(--secondarycolor); 
