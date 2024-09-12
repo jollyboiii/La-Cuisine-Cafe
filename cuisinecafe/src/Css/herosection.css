@@ -228,7 +228,7 @@ body {
 }
 @media(max-width:345px){
     .hero-container {
-        height: 35vh;
+        height: 45vh;
     }
 
     .coffee-beans {
@@ -239,4 +239,43 @@ body {
         background-size: cover;
         opacity: 0.3;
     }
+}
+
+@media (max-width:441px){
+    .hero-container {
+        height: 50vh;
+    }
+
+    .coffee-beans {
+        top: -450px;
+        right: -100px;
+        width: 50vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }   
+}
+
+@media(max-width:325px){
+    .hero-container {
+        height: 60vh;
+
+    }
+    .hero-content h1 {
+        font-size:1.5rem;
+        color: var(--secondarycolor);
+    }
+    
+    .hero-content p {
+        font-size:1rem;
+    }
+
+    .coffee-beans {
+        top: -450px;
+        right: -100px;
+        width: 50vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }   
 }

@@ -67,7 +67,7 @@ ul li:hover{
  
 
   ul li:hover {
-    background-color: var(--secondarycolor); 
+    /* background-color: var(--secondarycolor);  */
     color: var(--primarycolor); 
   }
   /* .Cusinelogo{
