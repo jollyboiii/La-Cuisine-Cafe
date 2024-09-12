@@ -9,16 +9,16 @@ function Footer() {
     <div className='mainfooter'>
       <div className="footerbgimage"/>
       <div className="footermaininfo container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="footerinfo mt-10">
+        <div className="footerinfo mt-2">
           <h2>Buisness Information</h2>
-          <div className='footerinfop mt-2'> 
+          <div className='footerinfop mt-'> 
             <p>Address: Cafe's Address</p>
             <p>Phone: 0433686477</p>
             <p>Email:"info@lacuisinecafe.com.au</p>
             <p>Business Hours: "Open Daily: 7 am - 3 pm"</p>
           </div>
         </div>
-        <div className="footerinfo mt-10">
+        <div className="footerinfo mt-2">
           <h2>Buisness Information</h2>
           <div className='footerinfop mt-2'> 
             <Link>Menu</Link><br/>
@@ -27,7 +27,7 @@ function Footer() {
             <Link>Contact Us</Link> <br/>
           </div>
         </div>
-        <div className="footerinfo mt-10">
+        <div className="footerinfo mt-2 mb-3">
           <h2>Quick Link</h2>
           <div className='footerimg mt-2'> 
             <img src={instagramimg} alt="Instagram" />
