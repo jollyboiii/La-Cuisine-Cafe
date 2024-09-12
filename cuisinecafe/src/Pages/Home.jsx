@@ -4,6 +4,7 @@ import Spealities from '../components/spealities'
 import About from '../components/About';
 import Feature from '../components/Feature';
 import Testimonial from '../components/Testimonial';
+import  Fotter from '../components/Footer';
 function Home() {
   return (
     <div className='hompage'> 
@@ -22,8 +23,9 @@ function Home() {
       <div>
         <Testimonial/>
       </div>
-
-      <h1>i am batman</h1>
+      <div>
+        <Fotter/>
+      </div>
     </div>
   )
 }

@@ -107,13 +107,28 @@ body {
 
 @media (max-width: 1024px) {
     .hero-container {
-        height: 60vh;
+        height: 90%;
+        padding: 5% 0;
+    }
+    .coffee-beans{
+        top: -20px;
+        right: -50px;
+        width: 45vw;
+        height: 25vh;
+        background-size: cover;
     }
 }
 
 @media (max-width: 915px) {
     .hero-container {
         height: 30vh;
+    }
+    .coffee-beans{
+        top: -10px;
+        right: -50px;
+        width: 50vw;
+        height: 25vh;
+        background-size: cover;
     }
 }
 
@@ -166,24 +181,60 @@ body {
     }
 
     .coffee-beans {
-        top: -190px;
+        top: -250px;
         right: -250px;
-        width: 40vw;
+        width: 50vw;
         height: 20vh;
         background-size: cover;
         opacity: 0.5;
     }
 }
+@media (max-width:550px){
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 5%;
+        height: 35vh;
+    }
+}
 
 @media (max-width: 480px) {
     .hero-container {
-        height: 45vh;
+        height: 35vh;
     }
 
     .coffee-beans {
         top: -600px;
         right: -150px;
         width: 80vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }
+}
+@media (max-width:376px){
+    .hero-container {
+        height: 45vh;
+    }
+
+    .coffee-beans {
+        top: -350px;
+        right: -150px;
+        width: 80vw;
+        height: 50vh;
+        background-size: cover;
+        opacity: 0.3;
+    }
+}
+@media(max-width:345px){
+    .hero-container {
+        height: 35vh;
+    }
+
+    .coffee-beans {
+        top: -550px;
+        right: -100px;
+        width: 50vw;
         height: 50vh;
         background-size: cover;
         opacity: 0.3;
