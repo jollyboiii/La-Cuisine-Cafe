@@ -1,4 +1,4 @@
-:root{
+:root {
     --primarycolor: #FF902A;
     --secondarycolor: #2F2105;
     --Background-1: #F6EBDA;
@@ -13,50 +13,46 @@
     --heading-h4-font-size: 18px;
     --heading-h5-font-size: 16px;
 }
-body{
+body {
     overflow-x: hidden;
 }
 .maindiv {
-    /* background-color: var(--Background-2); */
     width: 100%;
-    height: auto; 
-    margin: 0; 
-    padding-top: 0; /* Remove top padding to reduce gap */
+    height: auto;
+    margin: 0;
+    padding-top: 0;
 }
 
-
-.heading h2{
+.heading h2 {
     color: var(--secondarycolor);
     font-size: var(--heading-h2-font-size);
 }
 
-.heading span{
+.heading span {
     color: var(--primarycolor);
     font-size: var(--heading-h2-font-size);
 }
 
-/* Card text */
-.text h3{
+.text h3 {
     color: var(--secondarycolor);
     font-size: var(--heading-h3-font-size);
 }
 
-.text p{
+.text p {
     color: var(--secondary);
     font-size: var(--heading-h5-font-size);
 }
-.space{
+.space {
     margin: 0 0 2% 2%;
 }
 
-/* Card button */
-.cardcardbtn{
+.cardcardbtn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cardbtn{
+.cardbtn {
     color: var(--primarycolor);
     border: 1px solid var(--primarycolor);
     border-radius: 5px;
@@ -64,40 +60,57 @@ body{
     height: 4vh;
 }
 
-/* Image border-radius */
-.img-radius{
-    border-radius: 50px;   /* Add border-radius to the image */
+.img-radius {
+    border-radius: 50px;
 }
-.cardbtn:hover{
+
+.cardbtn:hover {
     background-color: var(--secondarycolor);
     color: var(--primarycolor);
 }
 
-/* Responsive Card */
 @media screen and (max-width: 1290px) {
     .cardbtn {
-        width: 40vw; 
+        width: 40vw;
         height: 5vh;
     }
 }
 @media screen and (max-width: 915px) {
     .cardbtn {
-        width: 30vw; 
+        width: 30vw;
         height: 3vh;
     }
 }
 @media screen and (max-width: 768px) {
     .cardbtn {
-        width: 30vw;      /* Adjust button width for smaller screens */
+        width: 30vw;
         height: auto;
     }
 }
 
 @media screen and (max-width: 576px) {
     .cardbtn {
-        width: 40vw;      /* Further adjust button width for mobile */
+        width: 40vw;
     }
-    .space{
+    .space {
         margin: 0 0 2% 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .maindiv {
+        padding: 0 15px;
+    }
+
+    .space {
+        margin: 0 0 2% 5%;
+    }
+
+    .cardcardbtn {
+        margin-top: 10px;
+    }
+
+    .ant-card {
+        margin: 10px;
     }
 }

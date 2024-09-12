@@ -43,7 +43,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 h2 {
@@ -80,11 +80,25 @@ span{
         width: 40vw; 
         height: 5vh;
     }
+    .bgimg {
+        height: 80%;
+        background-size: cover;
+        bottom: 5%;
+        right: 0;
+        opacity: 0.9;
+    }
 }
 @media screen and (max-width: 915px) {
     .cardbtn {
         width: 30vw; 
         height: 3vh;
+    }
+    .bgimg {
+        height: 80%;
+        background-size: cover;
+        bottom: 5%;
+        right: 0;
+        opacity: 0.9;
     }
 }
 @media screen and (max-width: 768px) {
@@ -92,13 +106,28 @@ span{
         width: 30vw;      
         height: auto;
     }
+    .bgimg {
+        height: 80%;
+        background-size: cover;
+        bottom: 5%;
+        right: 0;
+        opacity: 0.9;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .cardbtn {
         width: 40vw;     
     }
+    .bgimg {
+        height: 100%;
+        background-size: cover;
+        bottom: 10%;
+        right: 0;
+        opacity: 0.9;
+    }
 }
+
 
 
 @media (max-width: 768px) {
@@ -111,9 +140,9 @@ span{
     }
 
     .bgimg {
-        height: 30vh;
+        height: 90px;
         background-size: cover;
-        bottom: 500px;
+        bottom: 5%;
         right: 0;
         opacity: 0.9;
     }
