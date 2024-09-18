@@ -18,6 +18,8 @@
 
 nav{
     background-color: var(--Background-1);
+    z-index: 10;
+    position: relative;
   }
   ul li{
     font-weight: normal;
