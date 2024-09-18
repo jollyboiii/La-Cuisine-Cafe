@@ -1,0 +1,81 @@
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+
+}
+
+
+nav{
+    background-color: var(--Background-1);
+  }
+  ul li{
+    font-weight: normal;
+  }
+  ul li:hover{
+    color: var(--primarycolor);
+  
+  }
+  
+  .Visitusbtn{
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+    padding: 10px 20px;
+    border-radius:10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: normal;
+  }
+  .Visitusbtn:hover{
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+  }
+  
+  @media (max-width: 700px) {
+    #navbar-sticky {
+      background-color: var(--Background-2); 
+      border-radius: 10px;
+      padding: 5px; 
+      transition: all 0.3s ease-in-out; 
+    }
+  
+  
+   
+  
+    ul li:hover {
+      /* background-color: var(--secondarycolor);  */
+      color: var(--primarycolor); 
+    }
+    /* .Cusinelogo{
+      width: 30vw;
+      height: 10vh;
+    } */
+  }
+  
+  
+  @media (max-width: 820px) and (max-height: 1180px) {
+    ul li {
+      font-size: 0.9rem; 
+    }
+  
+    .Visitusbtn {
+      font-size: 1rem; 
+      padding: 8px 16px; 
+    }
+  
+    #navbar-sticky {
+      padding: 10px; 
+    }
+  }
+  

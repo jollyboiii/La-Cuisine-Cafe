@@ -14,80 +14,15 @@
   --border-color2: rgba(246, 235, 218, 0.5); 
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-
-body {
+html, body {
   background-color: var(--Background-3);
   font-family: "Poppins", sans-serif;
   font-weight: normal;
-  
-}
-
-nav{
-  background-color: var(--Background-1);
-}
-ul li{
-  font-weight: normal;
-}
-ul li:hover{
-  color: var(--primarycolor);
-
-}
-
-.Visitusbtn{
-  background-color: var(--primarycolor);
-  color: var(--secondarycolor);
-  padding: 10px 20px;
-  border-radius:10px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: normal;
-}
-.Visitusbtn:hover{
-  background-color: var(--secondarycolor);
-  color: var(--primarycolor);
-}
-
-@media (max-width: 700px) {
-  #navbar-sticky {
-    background-color: var(--Background-2); 
-    border-radius: 10px;
-    padding: 5px; 
-    transition: all 0.3s ease-in-out; 
-  }
-
-
- 
-
-  ul li:hover {
-    /* background-color: var(--secondarycolor);  */
-    color: var(--primarycolor); 
-  }
-  /* .Cusinelogo{
-    width: 30vw;
-    height: 10vh;
-  } */
-}
-
-
-@media (max-width: 820px) and (max-height: 1180px) {
-  ul li {
-    font-size: 0.9rem; 
-  }
-
-  .Visitusbtn {
-    font-size: 1rem; 
-    padding: 8px 16px; 
-  }
-
-  #navbar-sticky {
-    padding: 10px; 
-  }
+  overflow-x: hidden; /* Add overflow-x: hidden here too */
 }

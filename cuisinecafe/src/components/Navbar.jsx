@@ -1,14 +1,18 @@
 import React, { useState } from 'react';  // Import useState hook
 import { Link } from 'react-router-dom';
 import Lacoffelogo from '../Images/LacusineLogo.png';
-import '../App.css';
+import '../Css/Navbar.css';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);  
 
+
 const toggleMenu = () => {
 setIsOpen(!isOpen);  
 };
+const log=()=>{
+console.log("clicked");
+}
 
 return (
 <div>   
@@ -17,7 +21,7 @@ return (
         <img src={Lacoffelogo} className="Cusinelogo" alt="La Cuisine Logo"/>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse vistusbtndiv">
         <div className="vistbtnchildiv">
-            <button type="button" className=" focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center Visitusbtn">Visit us</button>
+            <button type="button" onClick={log} className=" focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center Visitusbtn">Visit us</button>
         </div>
         <button
             onClick={toggleMenu}  // Attach toggle function to button
@@ -41,10 +45,10 @@ return (
             <Link to="/about" >About Us</Link>
             </li>
             <li>
-            <Link to="/about" >Menu</Link>
+            <Link to="/Menu" >Menu</Link>
             </li>
             <li>
-            <Link to="/about" >Catering</Link>
+            <Link to="/Menu" >Catering</Link>
             </li>
             <li>
             <Link to="/about" >Rental Kitchen</Link>
