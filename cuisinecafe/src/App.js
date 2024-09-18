@@ -3,6 +3,7 @@ import './App.css';
 // import * as icon from '@fortawesome/free-solid-svg-icons';
 import Home from './Pages/Home';
 import About from './Pages/About';
+import Menu from  './Pages/Menu'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';  // Adjusted for version 6
 import Navbar from './components/Navbar';
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About />} />
+          <Route path="/Menu" element={<Menu />} />
         </Routes>
       </BrowserRouter>
 
