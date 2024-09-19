@@ -149,6 +149,14 @@ body {
         height: 45vh;
     }
 }
+@media(max-width:645px){
+    .heromain {
+        height:90vh;
+        
+
+    }
+
+}
 
 @media (max-width: 768px) {
     .hero-container {
