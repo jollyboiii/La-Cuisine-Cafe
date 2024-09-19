@@ -1,0 +1,108 @@
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+
+.Product{
+    width: 100%;
+    height: 65vh;
+    padding-top: 0;
+    margin-bottom: 5%;
+    /* background-color: red;    */
+}
+
+.Product h2{
+    font-size: var(--heading-h2-font-size);
+    color: var(--secondarycolor);
+    padding-left: 5%;
+}
+.productbg{
+    background-color: var(--Background-1);
+    width: 100%;
+    height: 60vh;
+    border-radius: 0% 100% 1% 99% / 100% 37% 63% 0% ;
+    background-image: url('../Images/coffecupbg.png');
+}
+.producth {
+    font-size: var(--heading-h2-font-size);
+    color: var(--secondarycolor);
+    font-weight:normal;
+}
+
+.Aboutcartext h3{
+    font-size: var(--heading-h3-font-size);
+    color: var(--secondarycolor);
+    font-weight:normal;
+}
+
+.Aboutcartext p{
+    font-size: var(--heading-h5-font-size);
+    color: var(--secondary-text);
+    font-weight:normal;
+}
+@media(max-width:1289px){
+    .Product{
+        height: 70vh;
+    }
+}
+@media (min-height:1369px){
+    .Product{
+        height: 20vh;
+    }
+}
+@media(max-width:1024px ) {
+    .Product{
+        height: 90vh;
+    }
+}
+
+@media(max-width:912px){
+    .Product{
+        height: 110vh;
+    }
+}
+
+@media(max-width:768px){
+    .Product{
+        height: 115vh;
+    }
+}   
+@media(max-width:645px){
+    .Product{
+        height: 200vh;
+    }
+}
+
+
+@media(max-width:600px){
+    .Product{
+        height: 150vh;
+    }
+}
+
+@media(max-width:475px){
+    .Product{
+        height: 155vh;
+    }
+}
+@media(max-width:375px){
+    .Product{
+        height: 180vh;
+    }
+}
+@media(max-width:320px){
+    .Product{
+        height: 240vh;
+    }
+}
