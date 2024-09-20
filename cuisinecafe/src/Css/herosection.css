@@ -101,7 +101,7 @@ body {
     background-image: url('../Images/backgroundbeans.png');
     background-size: 100% 45vh;
     background-repeat: no-repeat;
-    width: 50vw;
+    width: 30vw;
     height: 45vh;
     z-index: -1; 
 }
@@ -151,7 +151,8 @@ body {
 }
 @media(max-width:645px){
     .heromain {
-        height:90vh;
+        height:90%;
+        padding: auto;
         
 
     }

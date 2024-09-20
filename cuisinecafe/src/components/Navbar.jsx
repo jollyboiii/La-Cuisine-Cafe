@@ -48,13 +48,10 @@ return (
             <Link to="/Menu" >Menu</Link>
             </li>
             <li>
-            <Link to="/Menu" >Catering</Link>
+            <Link to="/catering" >Catering</Link>
             </li>
             <li>
-            <Link to="/about" >Rental Kitchen</Link>
-            </li>
-            <li>
-            <Link to="/about" >Gallery</Link>
+            <Link to="/kitchen" >Rental Kitchen</Link>
             </li>
         </ul>
         </div>
