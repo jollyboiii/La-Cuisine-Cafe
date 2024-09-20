@@ -4,6 +4,8 @@ import './App.css';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Menu from  './Pages/Menu'
+import Catering from './Pages/Catering';
+import Kitchen from './Pages/Kitchen';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';  // Adjusted for version 6
 import Navbar from './components/Navbar';
 
@@ -16,6 +18,9 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About />} />
           <Route path="/Menu" element={<Menu />} />
+          <Route path='/catering' element={<Catering/>}/>
+          <Route path='/kitchen' element={<Kitchen/>}/>
+
         </Routes>
       </BrowserRouter>
 
