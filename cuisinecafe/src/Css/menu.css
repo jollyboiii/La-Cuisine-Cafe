@@ -51,6 +51,18 @@
     align-items: center;
     padding: 2rem 0;
 }
+.menu-background1 {
+    background-color: var(--Background-1);
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    border-radius: 100% 0% 100% 0% / 46% 100% 0% 54%;
+    background-image: url("../Images/coffecupbg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
 
 .menu-inner-background {
     background-color: var(--Background-3);
@@ -99,19 +111,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .menu-background {
-        height: 50vh; /* Reduce height for tablet view */
-    }
+    
 
-    .menu-inner-background {
-        width: 90%; /* Ensure the inner background is not too large on tablets */
-    }
 }
 
 @media screen and (min-width: 768px) {
-    .menu-background {
-        height: 55vh; /* Add a slightly larger height for larger tablets */
-    }
+    
 
     .menu-inner-background {
         width: 85%; /* Keep inner background within a good size */
@@ -127,9 +132,7 @@
         font-size: 2.5rem;
     }
 
-    .menu-background {
-        height: 60vh;
-    }
+
 }
 
 @media(max-width:600px){

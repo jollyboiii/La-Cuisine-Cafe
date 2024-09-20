@@ -4,6 +4,7 @@ import HerosectionA from '../components/HerosectionA'
 import menuimage from '../Images/menucoffe.png'
 import '../Css/menu.css'
 import Menu1 from '../components/Menu1';
+import Menu2 from '../components/Menu2';
 
 function Menu() {
   const heroData={
@@ -22,6 +23,10 @@ function Menu() {
       <div>
         <Menu1/>
       </div>
+      <div>
+        <Menu2/>
+      </div>
+
     </>
 
   )
