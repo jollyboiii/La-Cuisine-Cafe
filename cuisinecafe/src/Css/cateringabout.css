@@ -1,4 +1,3 @@
-/* Aboutpagecomponent2 */
 :root {
     --primarycolor: #FF902A;
     --secondarycolor: #2F2105;
@@ -13,12 +12,13 @@
     --heading-h3-font-size: 1.5rem;
     --heading-h4-font-size: 1.125rem;
     --heading-h5-font-size: 1rem;
-
 }
-.Aboutcmpimg {
-    margin-left: 20%;
+
+.CateringPageImage {
+    /* background-color: red; */
+    margin-right: 20%;
     width: 30vw;
-    height: 55vh;
+    height: 60vh;
     z-index: 2; /* Ensure the image is on top */
     padding: 5px; 
     box-sizing: border-box;
@@ -26,7 +26,7 @@
     top: -130px; /* Move the image upward outside the background */
 }
 
-.Aboutcmpimg img {
+.CateringPageImage img {
     width: 40vw; 
     height: 100%;
     object-fit: cover;
@@ -35,12 +35,10 @@
     background-color: var(--Background-3);
 }
 
-
-/* Aboutpagecomponent2 */
-.Aboutpagemain {
+.CateringPageMain {
     background-color: var(--Background-1);
     width: 100%;
-    height: auto;
+    height: 90%;
     margin-top: 10%;
     padding: 2rem;
     position: relative;
@@ -48,111 +46,118 @@
     z-index: 1; /* Background behind the image */
 }
 
-.Aboutpagemain::before {
+.CateringPageMain::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../Images/coffebeans2.png');
+    background-image: url('../Images/coffecupbg.png');
     background-size: auto; 
     background-repeat: repeat; 
     background-position: top left;
-    opacity: 0.3; 
+    opacity: 0.4; 
     z-index: 1;
 }
 
-.Aboutpagemaincontent {
-    /* background-color: red; */
+.CateringPageContent {
     margin: 5% 0;
+    /* background-color: red; */
 }
 
-.Aboutpagemaincontent h2 {
+.CateringPageContent h2 {
     font-size: var(--heading-h2-font-size);
     color: var(--secondarycolor);
     font-weight: normal;
+    z-index: 5;
 }
 
-.Aboutpagemaincontent h3 {
+.CateringPageContent h3 {
     font-size: var(--heading-h3-font-size);
     color: var(--secondarycolor);
     font-weight: normal;
+    z-index: 5;
 }
 
-.Aboutpagemaincontent p {
+.CateringPageContent p {
     width:90vw;
     font-size: var(--heading-h5-font-size);
     color: var(--secondary-text);
     font-weight: normal;
-    
+    z-index: 5;
 }
-.span1{
+
+.span1 {
     color: var(--secondarycolor);
     border-bottom: 4px solid var(--primarycolor);
-
 }
 
 /* Responsive Styling */
 @media (min-width: 768px) {
-    .Aboutcmpimg{
-        margin-left: 0;
-        width: 50vw; 
+    .CateringPageImage {
+        margin-right: 0;
+        width: 50vw;
     }
-    .aboutimgradius {
+
+    .CateringImageRadius {
         width: 40vw; /* Make image responsive for larger screens */
     }
-    .Aboutpagemaincontent p {
+
+    .CateringPageContent p {
         width: 100%; /* Adjust for medium screens */
     }
 
-    .Aboutpagemaincontent {
-        margin-left: 5%;
+    .CateringPageContent {
+        margin-right: 5%;
     }
 }
 
 @media (min-width: 1024px) {
-    .Aboutpagemaincontent p {
+    .CateringPageContent p {
         width: 90vw; 
     }
 
-    .Aboutpagemaincontent {
-        margin-left: 10%;
+    .CateringPageContent {
+        margin-right: 10%;
     }
-    .Aboutcmpimg img{
+
+    .CateringPageImage img {
         width: 30vw;
         height: 100%;
     }
 }
-@media(max-width:600px){
-    .Aboutcmpimg{
+
+@media(max-width:600px) {
+    .CateringPageImage {
         top: 10px;
-        margin-left: 0;
+        margin-right: 0;
         width: 100%; 
         height: 60vh;
         margin-bottom: 0;
     }
-    .Aboutcmpimg img{
+
+    .CateringPageImage img {
         width: 100%;
         height: 100%;
     }
 }
-@media(max-width:645px){
-    .Aboutcmpimg img{
+
+@media(max-width:645px) {
+    .CateringPageImage img {
         width: 100%;
         height: 100%;
         top: -100px;
     }
 }
 
-
 @media (min-width: 1024px) {
-    .Aboutpagemaincontent p {
+    .CateringPageContent p {
         width: 30vw; 
     }
 }
 
-.Aboutpagemain img {
+.CateringPageMain img {
     margin: 0 auto;
     max-width: 80%; /* Limit image size */
 }

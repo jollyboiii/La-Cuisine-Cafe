@@ -11,7 +11,7 @@ function Aboutpagecomponent2() {
             <img src={unique} alt='unique img' className='aboutimgradius'/>
           </div>
           <div className=' Aboutpagemaincontent'>
-            <h2>What Makes Us Unique</h2>
+            <h2>What Makes <span className='span1'>Us Unique</span></h2>
             <h3>Our Commitment to <span>Quality</span></h3>
             <p>Quality is at the heart of everything we do. From our expertly roasted coffee beans to our hand-crafted artisan doughnuts, we take pride in offering only the best to our customers. Every product is made with care, passion, and a commitment to excellence.</p>
           </div>
