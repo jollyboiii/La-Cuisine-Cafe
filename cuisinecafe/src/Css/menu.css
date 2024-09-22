@@ -23,13 +23,13 @@
     font-size: var(--heading-h1-font-size);
 }
 
-.menu-container {
+.menu-container1 {
     width: 100%;
     height: auto;
     padding: 2rem 0;
 }
 
-.menu-container h2 {
+.menu-container1 h2 {
     font-size: var(--heading-h2-font-size);
     margin-top: 2rem;
     color: var(--secondary-text);
@@ -128,7 +128,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .menu-container h2 {
+    .menu-container1 h2 {
         font-size: 2.5rem;
     }
 
@@ -136,7 +136,7 @@
 }
 
 @media(max-width:600px){
-    .menu-container h2 {
+    .menu-container1 h2 {
         width: 90%;
         margin-left: 2%;
     }

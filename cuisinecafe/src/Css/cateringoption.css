@@ -41,6 +41,7 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .card-image {
@@ -55,9 +56,18 @@
     bottom: 0;
     width: 100%;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     background-color: var(--secondarycolor);
     color: white;
     font-size: 18px;
     font-weight: bold;
+}
+.carousel-item-padding {
+      padding: 0 20px; /* Increased gap for tablet mode */
+    }
+/* coursel */
+@media (max-width: 1024px) and (min-width: 464px) {
+    .carousel-item-padding {
+      padding: 0 20px; /* Increased gap for tablet mode */
+    }
 }

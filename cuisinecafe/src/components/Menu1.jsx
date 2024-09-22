@@ -4,7 +4,7 @@ import '../Css/menu.css';
 
 function Menu1() {
   return (
-    <div className="menu-container">
+    <div className="menu-container1">
       <div className="menu-inner-container mx-auto mt-2 sm:container">
         <h2>Coffee Products</h2>
         <div className="menu-underline"></div>
