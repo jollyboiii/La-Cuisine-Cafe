@@ -1,0 +1,80 @@
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+
+.Medetarianmain {
+    width: 100%; 
+    margin-top: 10%;
+    /* overflow:hidden; */
+    height: 90vh;
+}
+
+.Medetatirianmainbg {
+    width: 100%;
+    background-color: var(--Background-1);
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.medetarianimg img {
+    width: 100%;
+    max-width: 30vw;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    top: -65px;
+}
+
+@media (max-width: 1024px) {
+    .medetarianimg img {
+        max-width: 40vw;
+        top: -40px;
+    }
+    .Medetarianmain {
+        height: 48vh;
+    }
+    .Medetatirianmainbg {
+        height: 40vh;
+        
+    }
+
+}
+
+@media (max-width: 968px) {
+    .Medetarianmain {
+        height: 100%;
+        padding: 5% 0;
+    }
+    .medetarianimg img {
+        max-width: 50vw;
+        top: -30px;
+    }
+    .Medetatirianmainbg{
+        height: 100%;
+        padding: 5%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .medetarianimg img {
+        max-width: 70vw;
+        top: -20px;
+    }
+
+}

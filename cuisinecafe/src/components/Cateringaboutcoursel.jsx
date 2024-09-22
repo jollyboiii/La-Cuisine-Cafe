@@ -4,7 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Cateringoptioncard from './Cateringoptioncard';
 import image1 from '../Images/cateringoptimg3.png';
 import image2 from '../Images/cateringoptimg2.png';
-import image3 from '../Images/cateringoptimg3.png';
+import image3 from '../Images/cateringoptimg1.png';
 
 function Cateringaboutcoursel() {
   const cardData = [
@@ -36,13 +36,13 @@ function Cateringaboutcoursel() {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 564, min: 0 },
       items: 1,
     },
   };
 
   return (
-    <Carousel responsive={responsive}>
+    <Carousel responsive={responsive} >
       {cardData.map((item, index) => (
         <Cateringoptioncard key={index} image={item.image} caption={item.caption} />
       ))}
