@@ -12,9 +12,9 @@ function Footer() {
         <div className="footerinfo mt-2">
           <h2>Buisness Information</h2>
           <div className='footerinfop mt-'> 
-            <p>Address: Cafe's Address</p>
-            <p>Phone: 0433686477</p>
-            <p>Email:"info@lacuisinecafe.com.au</p>
+            <p>Address: Shop 2, 118 Church Street Parramatta, New South Wales 2150, Australia </p>
+            <p>Phone: 0407 133 379</p>
+            <p>Email: info@lacuisinecafe.com.au</p>
             <p>Business Hours: "Open Daily: 7 am - 3 pm"</p>
           </div>
         </div>

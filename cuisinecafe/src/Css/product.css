@@ -14,95 +14,78 @@
     --heading-h5-font-size: 1rem;
 }
 
-.Product{
+/* Card Image */
+.aboutimgradius {
+    border-radius: 15px;  /* Rounded corners for the image */
     width: 100%;
-    height: 65vh;
-    padding-top: 0;
-    margin-bottom: 5%;
-    /* background-color: red;    */
+    height: auto;
+    object-fit: cover;
 }
 
-.Product h2{
-    font-size: var(--heading-h2-font-size);
+/* Aboutcartext styles */
+.Aboutcartext h3 {
+    font-size: var(--heading-h3-font-size);
     color: var(--secondarycolor);
-    padding-left: 5%;
+    font-weight: normal;
+}
+
+.Aboutcartext p {
+    font-size: var(--heading-h5-font-size);
+    color: var(--secondary-text);
+    font-weight: normal;
 }
 .productbg{
     background-color: var(--Background-1);
     width: 100%;
-    height: 60vh;
+    height: 95%;
     border-radius: 0% 100% 1% 99% / 100% 37% 63% 0% ;
     background-image: url('../Images/coffecupbg.png');
 }
-.producth {
-    font-size: var(--heading-h2-font-size);
-    color: var(--secondarycolor);
-    font-weight:normal;
-}
 
-.Aboutcartext h3{
-    font-size: var(--heading-h3-font-size);
-    color: var(--secondarycolor);
-    font-weight:normal;
-}
+/* Responsive layout adjustments */
+@media(max-width:1024px) {
+    .Product {
+        height: auto;
+        padding: 5% 0;
+    }
 
-.Aboutcartext p{
-    font-size: var(--heading-h5-font-size);
-    color: var(--secondary-text);
-    font-weight:normal;
-}
-@media(max-width:1289px){
-    .Product{
-        height: 70vh;
-    }
-}
-@media (min-height:1369px){
-    .Product{
-        height: 20vh;
-    }
-}
-@media(max-width:1024px ) {
-    .Product{
-        height: 90vh;
+    .aboutimgradius {
+        height: 25vh; /* Adjust image height for smaller screens */
     }
 }
 
-@media(max-width:912px){
-    .Product{
-        height: 110vh;
+@media(max-width:768px) {
+    .Product {
+        height: auto;
+    }
+
+    .aboutimgradius {
+        height: 20vh; /* Adjust image height for smaller screens */
+    }
+
+    .Aboutcartext h3 {
+        font-size: 1.25rem; /* Adjust title size for smaller screens */
+    }
+
+    .Aboutcartext p {
+        font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
     }
 }
 
-@media(max-width:768px){
-    .Product{
-        height: 115vh;
+@media(max-width:475px) {
+    .Product {
+        height: auto;
     }
-}   
-@media(max-width:645px){
-    .Product{
-        height: 200vh;
-    }
-}
 
+    .aboutimgradius {
+        height: 18vh; /* Smaller image height for very small screens */
+    }
 
-@media(max-width:600px){
-    .Product{
-        height: 150vh;
+    .Aboutcartext h3 {
+        font-size: 1rem; /* Further adjust title size */
     }
-}
 
-@media(max-width:475px){
-    .Product{
-        height: 155vh;
-    }
-}
-@media(max-width:375px){
-    .Product{
-        height: 180vh;
-    }
-}
-@media(max-width:320px){
-    .Product{
-        height: 240vh;
+    .Aboutcartext p {
+        font-size: 0.85rem; /* Further adjust paragraph size */
     }
 }

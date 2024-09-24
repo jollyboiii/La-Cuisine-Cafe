@@ -12,8 +12,12 @@ function Customercoursel() {
       items: 5
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1252 },
       items: 3
+    },
+    mediumScreen: {
+      breakpoint: { max: 1252, min: 768 }, 
+      items: 2
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },

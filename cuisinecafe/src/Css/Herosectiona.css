@@ -82,6 +82,7 @@ body {
     width: 30vw;
     height: 20vh;
     z-index: 1;
+    
 }
 
 .herobtn {
@@ -154,6 +155,16 @@ body {
         top: -140px;
         right: 5px;
     }
+}
+@media(max-width:1219px){
+    .coffebeans1 {
+        width: 35vw;
+        height: 40vh;
+        top: -60px;
+        right: 5px;
+        opacity: 0.5;
+    }
+
 }
 
 @media (max-width: 920px) {

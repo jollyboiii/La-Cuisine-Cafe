@@ -16,7 +16,6 @@ function About() {
         <HerosectionA heading={heroData.heading} span={heroData.highlight} description={heroData.description}  showimage={false} showaboutbtn={true} showmenubtn={false}/>
       </div>
       <div>
-      
         <Product/>
       </div>
       <div>
