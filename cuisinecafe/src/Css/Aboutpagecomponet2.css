@@ -124,7 +124,7 @@
         height: 100%;
     }
 }
-@media(max-width:600px){
+@media(max-width:800px){
     .Aboutcmpimg{
         top: 10px;
         margin-left: 0;
@@ -136,9 +136,19 @@
         width: 100%;
         height: 100%;
     }
+    .Aboutpagemaincontent p{
+        /* background-color: red; */
+        width: 95%;
+    }
 }
-@media(max-width:645px){
+@media(max-width:785px){
+    .Aboutcmpimg{
+        
+        width: 100%;
+
+    }
     .Aboutcmpimg img{
+        
         width: 100%;
         height: 100%;
         top: -100px;
@@ -153,6 +163,6 @@
 }
 
 .Aboutpagemain img {
-    margin: 0 auto;
-    max-width: 80%; /* Limit image size */
+    margin: 0 ;
+    max-width: 80%; 
 }

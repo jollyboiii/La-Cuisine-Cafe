@@ -1,7 +1,5 @@
 import React from 'react';
 import '../Css/Herosection3.css';
-// import coffecup from '../Images/coffe.png'; 
-
 
 function Herosection3(props) {
   return (
@@ -19,10 +17,8 @@ function Herosection3(props) {
           <img src={props.image5} alt="Dish 5" className="grid-image" />
         </div>
         <div className='coffeebg'>
-
       </div>
       </div>
-      
     </div>
   );
 }

@@ -150,6 +150,21 @@
         top: -100px;
     }
 }
+@media(max-width:1018px){
+
+        .CateringPageImage {
+            top: 10px;
+            margin-right: 0;
+            width: 100%;
+            height: 50vh;
+        }
+    
+        .CateringPageImage img {
+            width: 100%;
+            height: 100%;
+        }
+    
+}
 
 @media (min-width: 1024px) {
     .CateringPageContent p {

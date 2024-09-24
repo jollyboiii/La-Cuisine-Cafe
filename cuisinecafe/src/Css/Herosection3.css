@@ -24,7 +24,8 @@
     background-size: 100% 45vh;
     background-repeat: no-repeat;
     width: 30vw;
-    height: 45vh;
+    height: 95%;
+    padding: 5% 0;
     z-index: -1; 
 }
 /* Main Section Styling */
@@ -34,6 +35,8 @@
     position: relative;
     margin-bottom: 0;
     padding-bottom: 0;
+    height: 95%;
+    padding: auto;
 }
 
 .catering-container {
@@ -57,12 +60,12 @@
 .catering-content h1 {
     font-size: var(--heading-h1-font-size);
     color: var(--secondarycolor);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .catering-content p {
-    font-size: var(--heading-h3-font-size);
+    font-size: var(--heading-h4-font-size);
     color: var(--secondarycolor);
-    font-weight:normal;
+    /* font-weight:normal; */
 }
 
 
@@ -111,9 +114,15 @@
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 1024px) {
+    .catering-main{
+        height: 100%;
+        padding-bottom: 20% ;
+    }
+    
     .catering-container {
         flex-wrap: wrap; /* Allow wrapping for smaller screens */
         justify-content: center; /* Center the content */
+
         
     }
 
@@ -132,23 +141,24 @@
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .catering-container {
         flex-direction: column;
-    }
-
-    
-
-    .catering-image-grid {
-        display: none;
     }
 
     .grid-image {
         max-height: 120px;
     }
-}
+} */
 
-@media (max-width: 480px) {
+@media (max-width: 590px) {
+    .catering-image-grid {
+        display: none;
+    }
+    .catering-main{
+        height: 100%;
+        padding-bottom: 5% ;
+    }
     .coffeebg {
         
         position: absolute;
