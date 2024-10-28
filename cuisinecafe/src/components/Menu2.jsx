@@ -1,17 +1,16 @@
-import React from 'react'
-import menu2 from '../list/menu2'
+import React from 'react';
 import '../Css/menu.css';
 
-function Menu2() {
+function Menu2({ menuItems,title }) {  
   return (
     <div className="menu-container1">
       <div className="menu-inner-container mx-auto mt-2 sm:container">
-        <h2>Artisan Doughnuts</h2>
+        <h2>{title}</h2>
         <div className="menu-underline"></div>
         <div className="menu-background1">
           <div className="menu-inner-background">
             <div className="menu-grid">
-              {menu2.map((item, index) => (
+              {menuItems.map((item, index) => (
                 <div key={index} className='menu-card'>
                   <div className='menu-card-inner'>
                     <h3>{item.name}</h3>
@@ -25,7 +24,7 @@ function Menu2() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Menu2
+export default Menu2;
