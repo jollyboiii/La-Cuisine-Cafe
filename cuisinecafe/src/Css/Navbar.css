@@ -43,6 +43,10 @@ nav{
     background-color: var(--secondarycolor);
     color: var(--primarycolor);
   }
+  .Cusinelogo{
+    width:10%;
+  
+  }
   
   @media (max-width: 700px) {
     #navbar-sticky {
