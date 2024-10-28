@@ -1,8 +1,13 @@
 import React from 'react';
 import '../Css/herosection.css'; 
 import coffecup from '../Images/coffe.png'; 
+import { useNavigate } from 'react-router-dom';
 
 function HeroSection() {
+  const navigate=useNavigate();
+  const menu=()=>{
+    navigate('/Menu');
+  }
   return (
     <div className="heromain">
       <div className="hero-container">
@@ -10,7 +15,7 @@ function HeroSection() {
         <h1>Sip, Savor, Smile <span className="highlight">Delicious Moments</span> Every Day</h1>
         <p>Welcome to La Cuisine Cafe, where every sip and bite is crafted with love.</p>
         <div className="hero-buttons">
-          <button className="menu-btn">Menu</button>
+          <button onClick={menu} className="menu-btn">Menu</button>
           <button className="location-btn">Our Location</button>
         </div>
       </div>
