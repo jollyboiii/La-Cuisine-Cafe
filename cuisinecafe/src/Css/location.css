@@ -1,0 +1,38 @@
+:root {
+    --primarycolor: #FF902A;
+    --secondarycolor: #2F2105;
+    --Background-1: #F6EBDA;
+    --Background-2: #F9D9AA;
+    --secondary-text: #7E7D7A;
+    --Background-3: #FAFAFA;
+    --border-color1: rgba(249, 217, 170, 0.5);
+    --border-color2: rgba(246, 235, 218, 0.5);
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+
+}
+.locationmargin{
+    margin: 0% 10%;
+}
+.shopinfo h3{
+    font-size: var(--heading-h2-font-size);
+    color: var(--primarycolor);
+    margin-bottom: 1rem;
+
+}
+.description{
+    font-size: var(--heading-h4-font-size);
+    color: var(--secondary-text);
+    margin-bottom: 1rem;
+    width: 90%;
+}
+.shopinfo p{
+    font-size: var(--heading-h4-font-size);
+    color: var(--secondary-text);
+    margin-bottom: 1rem;
+    width: 90%;
+}
+

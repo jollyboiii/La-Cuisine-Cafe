@@ -4,6 +4,7 @@ import Product from '../components/Product';
 import Aboutpagecomponent2 from '../components/Aboutpagecomponent2';
 import Footer from '../components/Footer';
 // import Herosection2 from '../components/Herosection2'
+import Location from '../components/Location';
 function About() {
   const heroData={
     heading:"Welcome to",
@@ -21,6 +22,11 @@ function About() {
       <div>
         <Aboutpagecomponent2/>
       </div>
+      <section id='VisitUS'>
+        <div>
+          <Location title={"Visit US"}/>
+        </div>
+      </section>
       <div>
         <Footer/>
       </div>

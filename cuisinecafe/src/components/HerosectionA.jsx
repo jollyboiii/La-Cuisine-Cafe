@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import '../Css/Herosectiona.css';
+import { useNavigate } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function HerosectionA(props) {
+  const navigate=useNavigate();
+  const menu=()=>{
+    navigate('/Menu');
+  }
+ 
+
   const [isMobile, setIsMobile] = useState(window.innerWidth < 700); // Set threshold as needed
 
   useEffect(() => {
@@ -28,11 +36,11 @@ function HerosectionA(props) {
             <div className="herobtn">
               {props.showaboutbtn && (
                 <>
-                  <button className='menubtn'>Menu</button>
-                  <button className='locationbtn'>Our Location</button>
+                  <button onClick={menu} className='menubtn'>Menu</button>
+                  <button className='locationbtn'><Link smooth to="/#location" className='location-link'>Our Location</Link></button>
                 </>
               )}
-              {props.showmenubtn && <button className='visitbtn'>Visit us</button>}
+              {props.showmenubtn && <button className='visitbtn'><Link smooth to="/about#VisitUS" className='location-link'>Visit Us</Link></button>}
             </div>
           </div>
           {props.showimage && !isMobile && (
