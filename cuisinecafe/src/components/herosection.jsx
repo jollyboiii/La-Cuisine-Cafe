@@ -16,7 +16,7 @@ function HeroSection() {
         <p>Welcome to La Cuisine Cafe, where every sip and bite is crafted with love.</p>
         <div className="hero-buttons">
           <button onClick={menu} className="menu-btn">Menu</button>
-          <button className="location-btn">Our Location</button>
+          <button className="location-btn"><a href='#location'>Our Location</a></button>
         </div>
       </div>
       <div className="hero-image">

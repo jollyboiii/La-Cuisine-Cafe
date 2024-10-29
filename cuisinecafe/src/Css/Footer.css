@@ -1,4 +1,3 @@
-
 :root {
     --primarycolor: #FF902A;
     --secondarycolor: #2F2105;
@@ -13,29 +12,26 @@
     --heading-h3-font-size: 1.5rem;
     --heading-h4-font-size: 1.125rem;
     --heading-h5-font-size: 1rem;
-
 }
 
-
-.mainfooter{
-    background-color:#2F2105;
+.mainfooter {
+    background-color: #2F2105;
     width: 100%;
     height: 100%;
-    margin-top:5%;
+    margin-top: 5%;
     position: relative;
 }
-.footermaininfo{
-    padding-bottom:15%;
+
+.footermaininfo {
+    padding-bottom: 15%;
     margin-left: 5%;
     padding-top: 3%;
-    /* background-color: #F0DCB6; */
     width: 90%;
-   
 }
-.footerbottom{
+
+.footerbottom {
     width: 100%;
     height: 10vh;
-    /* padding: 5% 0; */
     background-color: #110900;
     position: absolute; 
     bottom: 0;
@@ -48,14 +44,13 @@
 .footerbottom p, .footerbottom span {
     color: #FFD057; 
     font-size: 0.7rem;
-    
 }
 
-.footerbgimage{
+.footerbgimage {
     width: 100%;
     height: 80%;
     position: absolute;
-    bottom: 30;
+    bottom: 0; /* Adjusted to fit correctly */
     right: 0;
     background-image: url('../Images/coffecupbg.png');
     background-size: cover;
@@ -63,53 +58,57 @@
     z-index: 1;
     opacity: 0.2;
 }
-.footerinfo h2{
+
+.footerinfo h2 {
     font-size: 1.5rem;
     color: #F0DCB6;
     margin-bottom: 1rem;
 }
+
 .footerinfop p, .footerinfop a {
     font-size: 1rem;
     color: #F0DCB6;
     text-decoration: none; 
 }
 
-.footerimg{
+.footerimg {
     display: flex;
-    gap: 4%;
+    position: relative; 
+    z-index: 4; 
+    /* background-color: red; */
 }
-.footerimg img{
-    cursor: pointer;
 
+
+
+.facebook{
+    /* background-color: red; */
+    width: 5vw;
+  
 }
-@media(max-width:1025px){
-    .footerbgimage{
+.tiktok{
+    width: 5vw;
+}
+
+
+@media(max-width:1025px) {
+    .footerbgimage {
         height: 50%;
     }
 }
-@media (max-width:900px){
-    .footermaininfo{
-        padding-bottom:25%;
+
+@media (max-width:900px) {
+    .footermaininfo {
+        padding-bottom: 25%;
         margin-left: 5%;
         width: 90%;
-       
     }
-    .footerbgimage{
+    .footerbgimage {
         height: 70%;
     }
-
 }
 
-@media (max-width:500px){
-    .footermaininfo{
-        padding-bottom:25%;
-        margin-left: 5%;
-        width: 90%;
+@media (max-width:500px) {
+    .footerbottom p, .footerbottom span {
+        font-size: 0.5rem;
     }
-    
-    .footerbottom p ,.footerbootom span{
-        font-size:0.5rem;
-    }
-
-
 }

@@ -5,6 +5,7 @@ import About from '../components/About';
 import Feature from '../components/Feature';
 import Testimonial from '../components/Testimonial';
 import  Fotter from '../components/Footer';
+import Location from '../components/Location';
 function Home() {
   return (
     <div className='hompage'> 
@@ -23,6 +24,11 @@ function Home() {
       <div>
         <Testimonial/>
       </div>
+      <section id='location'>
+        <div>
+          <Location title={"Opening Hour"}/>
+        </div>
+      </section>
       <div>
         <Fotter/>
       </div>
