@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Css/Footer.css';
 import tiktok from '../Images/tiktok.png';
 import Facebook from '../Images/facebook.png';
+import Insta from  '../Images/instagram.png';
 
 function Footer() {
   
@@ -15,9 +16,9 @@ function Footer() {
           <h2>Business Information</h2>
           <div className='footerinfop mt-'> 
             <p>Address: Shop 2, 118 Church Street Parramatta, New South Wales 2150, Australia</p>
-            <p>Phone: 0407 133 379</p>
+            <p>Phone: +61 411678158</p>
             <p>Email: info@lacuisinecafe.com.au</p>
-            <p>Business Hours: "Open Daily: 7 am - 3 pm"</p>
+            <p>Opening time : Mon-Fri 7am-3Pm</p>
           </div>
         </div>
         <div className="footerinfo mt-2">
@@ -32,9 +33,10 @@ function Footer() {
         <div className="footerinfo mt-2 mb-3">
           <h2>Quick Links</h2>
           <div className='footerimg mt-2'> 
-            <div className="grid grid-cols-2 gap-0">
-              <a className='facebook' href='https://www.facebook.com/share/tAVEsfR55u7NCUHe/?mibextid=LQQJ4d'><img src={Facebook} alt="facebook"/></a>
+            <div className="grid grid-cols-3 gap-0">
+              <a className='facebook' href='https://www.facebook.com/people/La-Cuisine-Espresso-Dessert-and-Bar/61567603241017/?mibextid=ZbWKwL'><img src={Facebook} alt="facebook"/></a>
               <a className='tiktok marker mt-4' href='https://www.tiktok.com/@lacuisinecafe'><img src={tiktok} alt="tiktok"/></a>
+              <a className='tiktok marker mt-4' href='https://www.instagram.com/lacuisine.cafe?igsh=cWlqYnVtNG1kOGM0'><img src={Insta} alt="tiktok"/></a>
             </div>
           </div>
         </div>

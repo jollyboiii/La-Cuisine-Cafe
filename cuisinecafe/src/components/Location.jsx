@@ -11,9 +11,9 @@ function Location(props) {
             <p className='description'>Our friendly team is available during business hours to assist you. Connect with us today and let La Cuisine Café be the launchpad for your culinary endeavors.</p>
             <p>La Cuisine Cafe</p>
             <p>Address: Shop 2, 118 Church Street Parramatta, New South Wales 2150, Australia</p>
-            <p>Phone: 0407 133 379</p>
+            <p>Phone: +61 411678158</p>
             <p>Email: info@lacuisinecafe.com.au</p>
-            <p>Open Time: 7AM-9PM</p>
+            <p>Open Time:Monday-Friday 7AM-3PM</p>
           </div>
         </div>
         <div className='shopmap'>
